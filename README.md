@@ -7,7 +7,7 @@ C++로 작성합니다.
 -UnsortedList ★    
 -SortedList ★    
 -Stack ★    
--Queue   
+-Queue ★    
 -Graph   
 -Tree   
 -Priority Queue   
