@@ -15,8 +15,8 @@ class QueType {
 public:
 
 	QueType(); // Constructor
-	QueType(int max); 
 	~QueType(); // Destructor
+	
 	void MakeEmpty(); // Make the list Empty
 	bool IsEmpty() const; // Check the list is Empty
 	bool IsFull() const; // Check the list is Full
@@ -37,12 +37,12 @@ QueType::QueType() { // Class Constructor
 void QueType::MakeEmpty() {
 	NodeType* tempPtr;
 
-	while (front != NULL) { //front°¡ NULLÀÌ µÉ ¶§±îÁö
+	while (front != NULL) { //frontê°€ NULLì´ ë  ë•Œê¹Œì§€
 		tempPtr = front; 
-		front = front->next; // front¸¦ next·Î ³Ñ±â¸é¼­ 
-		delete tempPtr;  // front¿¡ ÀúÀåµÈ Æ÷ÀÎÅÍ¸¦ »èÁ¦
+		front = front->next; // frontë¥¼ nextë¡œ ë„˜ê¸°ë©´ì„œ 
+		delete tempPtr;  // frontì— ì €ìž¥ëœ í¬ì¸í„°ë¥¼ ì‚­ì œ
 	}
-	rear = NULL; // rear ±îÁö NULL·Î ¹Ù²ãÁØ´Ù.
+	rear = NULL; // rear ê¹Œì§€ NULLë¡œ ë°”ê¿”ì¤€ë‹¤.
 }
 
 QueType::~QueType() { //Class Destructor
@@ -52,11 +52,11 @@ QueType::~QueType() { //Class Destructor
 bool QueType::IsFull() const {
 	NodeType* location;
 	try {
-		location = new NodeType; // »õ·Î¿î °ªÀ» ÇÒ´çÇØº¸°í
+		location = new NodeType; // ìƒˆë¡œìš´ ê°’ì„ í• ë‹¹í•´ë³´ê³ 
 		delete location;
 		return false;
 	}
-	catch (std::bad_alloc) // ÇÒ´çµÇÁö ¾ÊÀ¸¸é catch
+	catch (std::bad_alloc) // í• ë‹¹ë˜ì§€ ì•Šìœ¼ë©´ catch
 	{
 		return true;
 	}
@@ -73,15 +73,15 @@ void QueType::Enqueue(ItemType item) {
 	else {
 		NodeType* newNode; 
 		newNode = new NodeType;
-		newNode->info = item; // »õ·Î¿î ³ëµå¿¡ itemÀÇ °ªÀ» ÁöÁ¤
+		newNode->info = item; // ìƒˆë¡œìš´ ë…¸ë“œì— itemì˜ ê°’ì„ ì§€ì •
 		newNode->next = NULL; 
 		if (rear == NULL) { 
-			front = newNode; //rear = NULL, Áï Ã³À½À¸·Î °ªÀ» EnqueueÇÏ´Â °æ¿ì
+			front = newNode; //rear = NULL, ì¦‰ ì²˜ìŒìœ¼ë¡œ ê°’ì„ Enqueueí•˜ëŠ” ê²½ìš°
 		}
 		else {
-			rear->next = newNode; //rearÀÇ ´ÙÀ½À» newNode¸¦ °¡¸®Å°°Ô ÇÑ ÈÄ¿¡
+			rear->next = newNode; //rearì˜ ë‹¤ìŒì„ newNodeë¥¼ ê°€ë¦¬í‚¤ê²Œ í•œ í›„ì—
 		}
-		rear = newNode; // rear¸¦ newNode·Î °»½Å
+		rear = newNode; // rearë¥¼ newNodeë¡œ ê°±ì‹ 
 	}
 }
 
@@ -94,7 +94,7 @@ void QueType::Dequeue(ItemType& item) {
 		tempPtr = front;
 		item = front->info;
 		front = front->next;
-		if (front == NULL) { //front°¡ rear->next, Áï NULL±îÁö ´êÀº °æ¿ì¿¡ rear±îÁö NULLÇÏ¿© ºó ¸®½ºÆ®·Î ¸¸µé¾îÁÜ.
+		if (front == NULL) { //frontê°€ rear->next, ì¦‰ NULLê¹Œì§€ ë‹¿ì€ ê²½ìš°ì— rearê¹Œì§€ NULLí•˜ì—¬ ë¹ˆ ë¦¬ìŠ¤íŠ¸ë¡œ ë§Œë“¤ì–´ì¤Œ.
 			rear = NULL;
 		}
 		delete tempPtr;
