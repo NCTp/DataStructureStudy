@@ -9,7 +9,7 @@ C++로 작성합니다.
 -SortedList ★    
 -Stack ★    
 -Queue ★    
--Graph   
+-Graph ★    
 -Tree ★   
 -Priority Queue ★      
 -Heap ★     
