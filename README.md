@@ -60,6 +60,22 @@ Queue에서 자료를 뺄 때 데이터들 중에 가장 앞(front)에 존재하
 예를 들어, 데이터를 순서대로 1, 2, 3, 4, 5, 6, 7을 삽입했을 때,   
 데이터를 다시 빼올 때에는 1, 2, 3, 4, 5, 6, 7의 순서로 데이터를 빼내게 된다.
 
+
+#  Graph    
+Graph는 Vertex와 Edge들의 집합으로 이루어진다. 이 때 Vertex들은 Finite하고, Non-empty 해야한다.  
+|용어|내용|   
+|---|---|
+|Node|노드|
+|Edge|노드 사이를 연결하는 선|
+|Vertex|노드의 위치를 의미, Node와 혼용가능|
+|Adjacent Vertex, Adjacent Nodes|Edge를 통해 연결된 Vertex를 의미|
+|Directed graphs, Undirected graphs|Edge의 방향이 있는가 없는가에 따라 다름|
+|Weighted graph|Edge가 가중치를 가지고 있음|
+|Graph Searching|그래프 탐색|
+|Depth-First-Search(DFS)|깊이를 우선하여 탐색, 다음 분기로 넘어가기 전 해당 분기의 모든 노드를 탐색, Stack이용이 권장됨|
+|Breadth-First-Search(BFS)|넓이를 우선하여 탐색, 인접한 노드들을 우선탐색, Queue이용이 권장됨|
+
+
 #  Tree   
 
 Graph의 일종인 Tree는 여러 노드가 한 노드를 가리키지 않고, 노드끼리 연결되는 길이 단 하나인 자료구조다.   
@@ -69,5 +85,14 @@ A노드가 있고 B노드가 있을 때, A -> B 일 경우 A가 Parent Node, B�
 Tree에서 각 Child 노드들은 단 하나의 Parent 노드만을 갖는다.   
 이 때 트리구조 가장 아래에 있는, 즉 Child Node를 갖지 않는 노드들을 Leaf Nodes라고 한다.
 
+|용어|내용|   
+|---|---|
+|Level|Tree의 각 단계를 의미|
+|Height|Tree의 높이를 의미|
+|Full Tree|꽉 찬 트리를 의미, 모든 노드가 0개 혹은 2개의 자식 노드를 가질 때|
+|Complete Tree|오른쪽 제일 아래가 비어있는 트리, 마지막 level(leaf nodes)에서의 요소들이 왼쪽부터 채워진다.|
+|Binary Tree|이진 트리, 모든 노드의 자식이 최대 두개이고, 노드 간에는 단 하나의 길로만 연결됨|
 
+
+# Heap
 
