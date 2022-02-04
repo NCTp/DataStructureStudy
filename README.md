@@ -104,6 +104,7 @@ Binary Tree이면서 모양과 순서에 조건이 있는 경우다. 조건은 �
 Shape Property(모양): complete binery tree이어야 한다.
 Order Property(순서): 해당 노드의 값은 자식보다 크거나 같아야 한다. (Max Heap일 경우.)      
 가장 큰 값이 Root에 존재하는 경우가 Max Heap,   
-가장 작은 값이 Root에 존재하는 경우가 Min Heap 이다.   
+가장 작은 값이 Root에 존재하는 경우가 Min Heap 이다.    
+당연히 Max Heap라면 부모 노드의 값이 자식 노드의 값보다 크고, Min Heap이라면 그 반대이다.   
 
 # Hash Table   
