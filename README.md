@@ -85,6 +85,11 @@ A노드가 있고 B노드가 있을 때, A -> B 일 경우 A가 Parent Node, B�
 Tree에서 각 Child 노드들은 단 하나의 Parent 노드만을 갖는다.   
 이 때 트리구조 가장 아래에 있는, 즉 Child Node를 갖지 않는 노드들을 Leaf Nodes라고 한다.
 
+Tree Traversal(트리 탐색)은 크게 Pre-Order, Post-Order, In-Order 세가지로 나뉜다.   
+Pre-Order = Root -> Left -> Right   
+Post-Order = Left -> Right -> Root   
+In-Order = Left -> Root -> Right   
+
 |용어|내용|   
 |---|---|
 |Level|Tree의 각 단계를 의미|
