@@ -99,6 +99,11 @@ In-Order = Left -> Root -> Right
 |Binary Tree|이진 트리, 모든 노드의 자식이 최대 두개이고, 노드 간에는 단 하나의 길로만 연결됨|
 
 
-# Heap
+# Heap  
+Binary Tree이면서 모양과 순서에 조건이 있는 경우다. 조건은 다음과 같다.   
+Shape Property(모양): complete binery tree이어야 한다.
+Order Property(순서): 해당 노드의 값은 자식보다 크거나 같아야 한다. (Max Heap일 경우.)      
+가장 큰 값이 Root에 존재하는 경우가 Max Heap,   
+가장 작은 값이 Root에 존재하는 경우가 Min Heap 이다.   
 
 # Hash Table   
