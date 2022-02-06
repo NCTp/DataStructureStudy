@@ -109,5 +109,5 @@ Order Property(순서): 해당 노드의 값은 자식보다 크거나 같아야
 당연히 Max Heap라면 부모 노드의 값이 자식 노드의 값보다 크고, Min Heap이라면 그 반대이다.   
 
 # Hash Table   
-Key-Value Structure
-Hash 함수를 통해 Key 생성
+Key-Value Structure   
+Hash 함수를 통해 Key 생성   
