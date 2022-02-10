@@ -110,10 +110,12 @@ Order Property(순서): 해당 노드의 값은 자식보다 크거나 같아야
 
 # Hash Table   
 Key-Value Structure (Dictionary)   
-|Key|Value|   
+
+|Key|Value|
 |Key_0|Value_0|
 |Key_1|Value_1|
-|Key_2|Value_2|   
+|Key_2|Value_2|
+
 Hash 함수를 통해 데이터에 대응하는 고유한 Key값을 생성한다.   
 일반적으로 배열에서 값을 찾을 때 선형 탐색을 하므로 시간복잡도가 O(n)이 되지만,   
 Hash Table의 경우에는 어떤 데이터를 찾더라도 Key에 대응하는 Value를 찾는 한 단계만 거치므로 시간복잡도가 O(1)이라는 장점이 있다.   
