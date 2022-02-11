@@ -121,7 +121,7 @@ Order Property(순서): 해당 노드의 값은 자식보다 크거나 같아야
 
 # Hash Table   
 Key-Value Structure (Dictionary)   
-데이터를 (Key, Value)로 저장하는 자료구조이다.   
+먼저 Dictionary란 데이터를 (Key, Value)로 저장하는 자료구조이다.   
    
 |Key|Value|
 |---|---|
